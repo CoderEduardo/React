@@ -1,8 +1,7 @@
 .Card {
-    background-color: red;
     border-radius: 10px;
     overflow: hidden;
-    border: solid red 3px;
+    border: solid 3px;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -12,7 +11,6 @@
 
 .Card .Title {
     padding: 5px 0px;
-    background-color: red;
     display: flex;
     justify-content: center;
 }

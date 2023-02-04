@@ -12,20 +12,20 @@ export default _ =>
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
-        <Card titulo="#4 - Desafio Aleátorio">
+        <Card titulo="#4 - Desafio Aleátorio" color="green">
             <Aleatorio min="0" max="100" />
         </Card>
 
-        <Card titulo="#3 - Fragmento React">
+        <Card titulo="#3 - Fragmento React" color="yellow">
             <Fragmento />
         </Card>
 
-        <Card titulo="#2 - Situação do Aluno">
+        <Card titulo="#2 - Situação do Aluno" color="purple">
             <ComParametro titulo="Situação Aluno" aluno="Pedro" nota={6} />
             <ComParametro titulo="Situação Aluno" aluno="Maria" nota={9.7} />
         </Card>
 
-        <Card titulo="#1 - Primeiro Componente">
+        <Card titulo="#1 - Primeiro Componente" color="orange">
             <Primeiro />
         </Card>
 
