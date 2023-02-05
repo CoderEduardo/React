@@ -9,12 +9,17 @@ import Card from "./components/layout/Card";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
+import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 
 export default _ =>
     <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+
+            <Card titulo="Lista de Produtos" color="#00ffff">
+                <TabelaProdutos></TabelaProdutos>
+            </Card>
 
             <Card titulo="Lista de Alunos" color="pink">
                 <ListaAlunos></ListaAlunos>

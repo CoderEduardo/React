@@ -5,8 +5,8 @@
     margin: 20px;
     display: flex;
     flex-direction: column;
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 350px;
+    max-width: 350px;
 }
 
 .Card .Title {
