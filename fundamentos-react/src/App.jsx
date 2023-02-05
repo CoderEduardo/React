@@ -10,6 +10,7 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
+import ParOuImpar from "./components/condicional/ParOuImpar";
 
 export default _ =>
     <div className="App">
@@ -17,11 +18,15 @@ export default _ =>
 
         <div className="Cards">
 
-            <Card titulo="Lista de Produtos" color="#00ffff">
+            <Card titulo="#8 - Renderização Condicional" color="#2b007d">
+                <ParOuImpar numero={20}/>
+            </Card>
+
+            <Card titulo="#7 - Lista de Produtos" color="#00ffff">
                 <TabelaProdutos></TabelaProdutos>
             </Card>
 
-            <Card titulo="Lista de Alunos" color="pink">
+            <Card titulo="#6 - Lista de Alunos" color="pink">
                 <ListaAlunos></ListaAlunos>
             </Card>
 
