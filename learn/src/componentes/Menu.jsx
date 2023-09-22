@@ -3,9 +3,9 @@ import React from "react"
 function Menu(props) {
     return (
         <ul className="lista">
-            {props.links.map((link,index)=>{
+            {props.links.map((link)=>{
                 return(
-                    <li key={index}>{link}</li>
+                    <li key={link}>{link}</li>
                 )
             })}
         </ul>
