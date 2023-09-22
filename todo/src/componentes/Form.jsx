@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Lista from "./Lista";
 
 function Form() {
 
@@ -26,9 +27,7 @@ function Form() {
                 <button onClick={adicionarItem}>Add</button>
             </form>
 
-            <ul>
-                {itens.map(iten => <li>{iten}</li>)}
-            </ul>
+            <Lista itens={itens}></Lista>
         </>
 
     )
