@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { ContadorContexto } from "../ContadorContext";
 
 function Contador(props) {
 
-    const [count, setCount] = useState(props.count)
+    const [count, setCount] = useContext(ContadorContexto)
 
     function inc() {
         setCount(count + 1)
@@ -13,11 +14,11 @@ function Contador(props) {
     }
 
     return (
-        <>
+        <div className="contador"> 
             <h2>{count}</h2>
             <button onClick={dec}>-</button>
             <button onClick={inc}>+</button>
-        </>
+        </div>
     )
 }
 
