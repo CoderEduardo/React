@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Contador(props) {
 
     /*Sempre o primeiro valor de uma variável atribuida ao useState, será referente ao valor atual, e o segundo valor sempre será referente a um método
     de atualização do primeiro estado*/
 
-    const [count,setCount] = useState(props.contador)
+    let [count,setCount] = useState(props.count)
+
+    useEffect(()=>{
+            localStorage.getItem("count")
+    },[])
+
+    useEffect(()=>{
+        document.title = count
+        localStorage.setItem("count",count)
+    },[count])
 
     function incrementar(){
         setCount(count + 1)

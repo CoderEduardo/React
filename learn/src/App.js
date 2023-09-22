@@ -4,10 +4,10 @@ import Header from './componentes/Header';
 
 function App() {
   return (
-    <>
+    <div>
       <Header name="Luis Eduardo" links={['Sobre', 'Comprar', 'Contato', 'Login']}></Header>
-      <Contador contador={1}></Contador>
-    </>
+      <Contador count={1}></Contador>
+    </div>
   );
 }
 
