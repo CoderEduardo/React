@@ -4,7 +4,7 @@ import { useSelector} from "react-redux";
 function Header(props){
 
     const contador = useSelector(state=>{
-        return state
+        return state.counter
     })
 
     return(
