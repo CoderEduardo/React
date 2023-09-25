@@ -1,15 +1,27 @@
-.nav{
-    background-color: red;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: black;
+    color: white;
 }
 
-ul{
+nav h1{
+    padding: 20px;
+}
+
+nav ul{
     display: flex;
 }
 
-li{
-    margin-right:20px ;
+nav li{
+    padding: 20px;
     list-style: none;
 }
+

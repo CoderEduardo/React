@@ -1,14 +1,13 @@
 import React from "react";
-import '../style.css'
 
 export default function Nav(){
     return(
-        <div className="nav">
-            <h2>Teste</h2>
+          <nav>
+              <h1>Teste</h1>
             <ul>
-                <li>Aulas</li>
                 <li>Sobre</li>
+                <li>Artigos</li>
             </ul>
-        </div>
+          </nav>
     )
 }
