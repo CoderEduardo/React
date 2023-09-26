@@ -25,3 +25,7 @@ nav li{
     list-style: none;
 }
 
+.link{
+    text-decoration: none;
+    color: burlywood;
+}
